@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <a href="index.html" class="logo"><img src="images/dc_logo.png"></a>
+        <div class="menu-logo">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="index2.html">Carte</a></li>
+                <li><a href="index3.html">Contact</a></li>
+                <li><a href="index10.html">Lieu</a></li>
+            </ul>
+        </div>
+        <img src="images/menu_navbar.png" alt ="menu hamburger" class="menu-hamburger">
+          
+    </header>
+    <!-- header -->
+
+    <div id="carte">
+        <h1>Banane Pesée</h1>
+        <h2>repas traditionnel caribéen</h2>
+        <div class="image-container">
+            <img src="images/images_banane_pesée1.jpg" alt="Image banane pesée responsive">
+        </div>
+        <div class="image-container">
+            <img src="images/images_banane_pesée2.jpg" alt="Image banane pesée responsive">
+        </div>
+        
+    </div>
+    
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".menu-logo")
+
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+</html>

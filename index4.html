@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <a href="index.html" class="logo"><img src="images/dc_logo.png"></a>
+        <div class="menu-logo">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="index2.html">Carte</a></li>
+                <li><a href="index3.html">Contact</a></li>
+                <li><a href="index10.html">Lieu</a></li>
+            </ul>
+        </div>
+        <img src="images/menu_navbar.png" alt ="menu hamburger" class="menu-hamburger">
+          
+    </header>
+    <!-- header -->
+
+    <div id="carte">
+        <!--Bokits-->
+        <h1>Nos Bokits bien garnis</h1>
+        <div>
+            <h2>Jambon Fromages</h2> 
+            <h3>3,00€</h3>
+        </div>
+        <div>
+            <h2>Saucisses Salade</h2>
+            <h3>3,00€</h3>
+        </div>
+        <div>
+            <h2>Poulet Salade</h2>
+            <h3>3,00€</h3>
+        </div>
+        <div>
+            <h2>Morue Salade</h2>
+            <h3>3,50€</h3>
+        </div>
+        <div>
+            <h2>Steak Salade</h2>
+            <h3>3,50€</h3>
+        </div>
+        <div>
+            <h2>Merguez Salade</h2>
+            <h3>3,50€</h3>
+        </div>
+        <div>
+            <h2>Kebab Salade</h2>
+            <h3>4,50€</h3>
+        </div>
+        <div>
+            <h2>Poulet Salade Fromage</h2>
+            <h3>3,50€</h3>
+        </div>
+        <div>
+            <h2>Saucisses Salade Fromage</h2>
+            <h3>3,50€</h3>
+        </div>
+        <div>
+            <h2>Oeuf Poulet Fromage</h2>
+            <h3>5,00€</h3>
+        </div>
+
+        <!--Bokits complet-->
+        <h1>Nos Bokits complets</h1>
+        <div>
+            <h2>Oeuf Jambon Fromage</h2>
+            <h3>4,00€</h3>
+        </div>
+        <div>
+            <h2>Oeuf Jambon Saucisse Fromage</h2>
+            <h3>4,50€</h3>
+        </div>
+        <div>
+            <h2>Oeuf Jambon Merguez Fromage</h2>
+            <h3>5,00€</h3>
+        </div>
+        <div>
+            <h2>Oeuf Jambon Steak Fromage</h2>
+            <h3>5,00€</h3>
+        </div>
+        <div>
+            <h2>Oeuf Thon Fromage</h2>
+            <h3>5,00€</h3>
+        </div>
+        <div>
+            <h2>Oeuf Morue Fromage</h2>
+            <h3>5,50€</h3>
+        </div>
+
+        <!--Bokits super complet-->
+        <h1>Nos Bokits super complets</h1>
+        <div>
+            <h2>Oeuf Kebab Jambon Fromage</h2>
+            <h3>6,00€</h3>
+        </div>
+        <div>
+            <h2>Oeuf Steak Merguez Jambon Fromage</h2>
+            <h3>5,50€</h3>
+        </div>
+        <div>
+            <h2>Oeuf Saucisse Poulet Fromage</h2>
+            <h3>5,50€</h3>
+        </div>
+        <div>
+            <h2>Oeuf Merguez Saucisse Jambon Fromage</h2>
+            <h3>5,50€</h3>
+        </div>
+        <div>
+            <h2>Oeuf Morue Thon Fromage</h2>
+            <h3>5,50€</h3>
+        </div>
+        <h1> Quelques images</h1>
+        <img src="images/images_bokits2.jpg">
+        <h4>La cuisson</h4>
+        <img src="images/images_bokits1.jpg">
+        <h4>Le résultat</h4>
+    </div>
+
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".menu-logo")
+
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+</html>

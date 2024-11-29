@@ -1,0 +1,648 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background-color: #fff;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 3%;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1)
+}
+.logo img {
+    width: 50px;
+}
+a img {
+    width: 20px;
+    margin-left: 20px;
+}
+.menu-logo {
+    display: flex;
+    position: absolute;
+    left: 100px;
+    align-items: center;
+    justify-content: center;
+}
+.menu-logo ul {
+    display: flex;
+    list-style: none;
+    margin-left: 30px;
+}
+.menu-logo ul li a {
+    font-weight: bold;
+    margin-left: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #000;
+    position: relative;
+}
+.menu-logo ul li a:after {
+    content: "";
+    position: absolute;
+    left: -15px;
+    bottom: 20px;
+    background-color: #f7a800;
+    height: 2px;
+    width: 100%;
+    transition: 0.5s;
+    opacity: 0;
+}
+.menu-logo ul li a:hover:after {
+    left: 0;
+    opacity: 1;
+}
+
+button {
+    padding: 6px 15px;
+    outline: 0;
+    background-color: black;
+    border: 2px solid #000000;
+    border-radius: 30px;
+    transition: 0.1s ease-out;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #f7a800;
+    color: #000000;
+    border:2px solid #f7a800;
+}
+
+.menu-hamburger {
+    display: none;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    width: 70px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+
+    .menu-hamburger{
+        display: block;
+    }
+
+    .menu-logo {
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: rgba(255,255,255,0.20);
+        backdrop-filter: blur(8px);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+    }
+
+    .menu-logo.mobile-menu {
+        margin-left: 0;
+    }
+
+
+    .menu-logo ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-logo ul li {
+        margin: auto ;
+        font-size: 1.2em;
+    }
+
+}
+
+/*Barre de navigation pour index2.html*/
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #ffffff;
+}
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+  li {
+    margin: 0 10px;
+}
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+  
+
+/*Sections*/
+section {
+    display: flex;
+    align-items: center;
+    width: 94%;
+    margin: 30px 3%;
+}
+section div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+section .div1 , section .div2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+section div button {
+    margin-top: 35px;
+}
+@media screen and (max-width: 768px) {
+    .btn {
+      margin-top: 10px;
+    }
+}
+
+section h1 {
+    font-size: 2.4rem;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+section p {
+    font-size: 1,4rem;
+    text-align: center;
+    padding: 10px 50px;
+    letter-spacing: 1px;
+}
+
+section h2 {
+    font-size: 2.5vw;
+    text-align: center;
+    padding: 10px 50px;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 768px) {
+    section {
+      flex-direction: column;
+    }
+    section div {
+      width: 100%;
+    }
+    section .div1, section .div2 {
+      height: auto;
+      width: 100%;
+    }
+}  
+
+.section__1 .div1 p {
+    color: #fff;
+}
+.section__1 .div1 h1 {
+    color: #fff;
+}
+
+.section__1 {
+    background-color: #dc5832;
+}
+
+.section__2 {
+    background-color: #d49702;
+}
+
+.section__3 {
+    background-color: #f7edb9;
+}
+
+.section__4 {
+    background-color: #faaa5a;
+}
+
+.section__5{
+    background-color: #f8f6f6;
+}
+
+.section__6 {
+    background-color: #ab794b ;
+}
+
+#carte
+{
+    
+    width: 65vw;
+    margin:0 auto;
+    text-align: center;
+    align-content: center;
+    border: 10px solid #65161c;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#carte img
+{
+    height: 100%;
+    width: 60%;
+    object-fit: cover;
+    padding: 30px;
+}
+  
+
+
+
+div {
+    display: block;
+    margin-bottom: 10px;
+}
+h2, h3 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+  
+#carte h1
+{
+    color: #65161c;
+    padding: 10px;
+    padding-top: 30px;
+}
+
+h3
+{
+    color: #faaa5a;
+}
+
+#carte h2
+{
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+#carte p
+{
+    color: rgb(0, 0, 0);
+}
+
+.image-container {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+  
+
+
+
+/*Contact*/
+#contact
+{
+    width: 50vw;
+    margin: 0 auto;
+    background-color: #ffffff;
+    text-align: center;
+    align-content: center;
+    border: 2px solid #000;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#contact h1
+{
+    padding-bottom: 20px;
+    color: red;
+}
+
+#contact h2
+{
+    padding-bottom: 10px;
+    color: #faaa5a;
+}
+
+#contact p
+{
+    padding-bottom: 5px;
+    font-size: 1rem;
+}
+
+#contact h4
+{
+    font-size: 1rem;
+    padding-top: 10px;
+}
+
+/* Barre de navigation de index2.html*/
+
+.topnav {
+    background-color: #65161c;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.topnav_link {
+    color: #faaa5a;
+    padding: 12px;
+    text-decoration: none;
+}
+.topnav_link:hover {
+    color: #faaa5a;
+}
+
+
+  
+/* hide responsive menu */
+#topnav_hamburger_icon,
+#topnav_responsive_menu {
+    display: none;
+}
+  
+@media only screen and (max-width: 768px) {
+    /* hide classic menu */
+    #topnav_menu {
+      display: none;
+    }
+  
+    /* position home link at left and hamburger at right */
+    #home_link {
+      flex-grow: 1;
+    }
+  
+    /* disable horizontal scrolling  */
+    #root {
+      position: fixed;
+      overflow-x: hidden;
+    }
+  
+    /* show responsive menu and position at the right of the screen */
+    #topnav_responsive_menu {
+      display: block;
+      position: absolute;
+      margin: 0;
+      right: 0;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+  
+      z-index: 99;
+  
+      transform-origin: 0% 0%;
+      transform: translate(200%, 0);
+  
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    }
+  
+    #topnav_responsive_menu ul {
+      display: flex;
+      flex-direction: column;
+  
+      position: absolute;
+      margin: 0;
+      right: 0;
+      top: 0;
+  
+      min-width: 50vw;
+      height: 100vh;
+      padding: 56px 0 0;
+  
+      text-align: center;
+  
+      background: #faaa5a;
+      list-style-type: none;
+      -webkit-font-smoothing: antialiased;
+    }
+  
+    #topnav_responsive_menu li {
+      padding: 12px;
+    }
+  
+    #topnav_responsive_menu a {
+      white-space: nowrap;
+      color: #65161c;
+      text-decoration: none;
+    }
+  
+    /* And let's slide it in from the right */
+    #topnav_responsive_menu.open {
+      transform: none;
+      position: fixed;
+    }
+  
+    /* ******************** HAMBURGER ICON ******************** */
+    /* define size and position of the hamburger link */
+    #topnav_hamburger_icon {
+      display: block;
+      position: relative;
+      margin: 16px;
+      width: 33px;
+      height: 28px;
+  
+      z-index: 100;
+  
+      -webkit-user-select: none;
+      user-select: none;
+      cursor: pointer;
+    }
+  
+    /* define the style (size, color, position, animation, ...) of the 3 spans */
+    #topnav_hamburger_icon span {
+      display: block;
+      position: absolute;
+      height: 4px;
+      width: 100%;
+      margin-bottom: 5px;
+  
+      background: #ededed;
+      border-radius: 3px;
+  
+      z-index: 100;
+  
+      opacity: 1;
+      left: 0;
+  
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transition: 0.25s ease-in-out;
+      -moz-transition: 0.25s ease-in-out;
+      -o-transition: 0.25s ease-in-out;
+      transition: 0.25s ease-in-out;
+    }
+  
+    /* set the 3 spans position to look like a hamburger */
+    #topnav_hamburger_icon span:nth-child(1) {
+      top: 0px;
+      -webkit-transform-origin: left top;
+      -moz-transform-origin: left top;
+      -o-transform-origin: left top;
+      transform-origin: left top;
+    }
+    #topnav_hamburger_icon span:nth-child(2) {
+      top: 12px;
+      -webkit-transform-origin: left center;
+      -moz-transform-origin: left center;
+      -o-transform-origin: left center;
+      transform-origin: left center;
+    }
+    #topnav_hamburger_icon span:nth-child(3) {
+      top: 24px;
+      -webkit-transform-origin: left bottom;
+      -moz-transform-origin: left bottom;
+      -o-transform-origin: left bottom;
+      transform-origin: left bottom;
+    }
+  
+    /* change color when opening the menu */
+    #topnav_hamburger_icon.open span {
+      background: #000000;
+    }
+  
+    /* the first span rotates 45° \ */
+    #topnav_hamburger_icon.open span:nth-child(1) {
+      width: 110%;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  
+    /* the second span disappears */
+    #topnav_hamburger_icon.open span:nth-child(2) {
+      width: 0%;
+      opacity: 0;
+    }
+  
+    /* the last span rotates -45° / */
+    #topnav_hamburger_icon.open span:nth-child(3) {
+      width: 110%;
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+    }
+}
+  
+
+/*meal CSS*/
+
+.meal {
+    margin: 30px 0;
+}
+.meal .top {
+    text-align: center;
+}
+.meal .top h1 {
+    font-size: 30px;
+    padding: 15px 0;
+}
+.meal .top p {
+    color: #555555;
+    font-size: 14px;
+    padding: 5px 0;
+}
+.meal .bottom {
+  margin: 60px 12%;
+  display: flex;
+  justify-content: space-between;
+
+}
+.meal .bottom .box {
+    text-align: center;
+    width: 30%;
+}
+.meal .bottom .box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.meal .bottom .box h4 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+.meal .bottom .box p {
+    margin: 5px 0;
+    font-size: 12px;
+    color: #999;
+}
+
+.meal .bottom .box span {
+    font-size: 25px;
+    color: #e83f10;
+}
+.meal .bottom .box button a img {
+    width: 20px;
+    height: 20px;
+    width:fit-content;
+}
+.meal .bottom .box button {
+    background-color: #faaa5a;
+    border: 0;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    padding: 5px ;
+    display: flex;
+}
+.meal .bottom .box button a {
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin:  0 auto;
+}
+
+@media (max-width:739px) {
+    .meal .top h1 {
+        font-size: 20px;
+    }
+}
+  
+@media (max-width:634px) {
+    .meal .bottom {
+        flex-direction: column;
+    }
+    .meal .bottom .box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+}
+  
+footer {
+    background-color: #ab794b;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 12px;
+}

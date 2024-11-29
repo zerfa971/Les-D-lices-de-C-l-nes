@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Délices de Célène Site Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <a href="index.html" class="logo"><img src="images/dc_logo.png"></a>
+        <div class="menu-logo">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="index2.html">Carte</a></li>
+                <li><a href="index3.html">Contact</a></li>
+                <li><a href="index10.html">Lieu</a></li>
+            </ul>
+        </div>
+        <img src="images/menu_navbar.png" alt ="menu hamburger" class="menu-hamburger">
+          
+    </header>
+    <!-- header -->
+
+    <!--contact-->
+    <div id="contact">
+        <h1>Contact</h1>
+        <h2>Appeler</h2>
+        <h4>Notre numéro de téléphone:</h4>
+        <p>0690 24 69 47</p>
+        <h2>Horaires d'ouverture</h2>
+        <h4>Mardi, Mercredi, Jeudi, Vendredi, Samedi</h4>
+        <p>de 18h00 à 22h00</p>
+        <h2>Lieu</h2>
+        <h4> Région</h4>
+        <p>Guadeloupe</p>
+        <h4> Ville</h4>
+        <p>Baie-Mahault</p>
+        <h4> Adresse</h4>
+        <p>665 rue Joseph ANTENOR</p>
+        <p>CALVAIRE L'OFFICIAL</p>
+        <p>97 122  BAIE-MAHAULT</p>
+        <h4>Créateur du Site</h4>
+        <p>BERTHE Nolan | n.berthe@hotmail.com</p>
+    </div>
+  <!--contact-->
+</body>
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".menu-logo")
+
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</html>

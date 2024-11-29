@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Délices de Célène Site Web</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- icons library -->
+    <script src="https://kit.fontawesome.com/a980e88be8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <a href="index.html" class="logo"><img src="images/dc_logo.png"></a>
+        <div class="menu-logo">
+            <ul>
+                <li><a href="index2.html">Carte</a></li>
+                <li><a href="index3.html">Contact</a></li>
+                <li><a href="index10.html">Lieu</a></li>
+            </ul>
+        </div>
+        <img src="images/menu_navbar.png" alt ="menu hamburger" class="menu-hamburger">
+          
+    </header>
+    <!-- header -->
+
+    <!-- section1 -->
+    <section class="section__1">
+        <div class="div1">
+            <h1>Les Délices de Célène</h1>
+            <p>Ouvert du mardi au samedi de 18h à 22h</p>
+        </div>
+        <div class="div2">
+            <img src="images/d_celene.png" alt="">
+        </div>
+    </section>
+    <!-- section1 -->
+
+  <!-- section2 -->
+  <section class="section__2">
+    <div class="div1">
+        <h1>Nos Bokits <br> bien garnis</h1>
+        <p>Découvrez le délicieux mariage de saveurs <br> exotiques et croustillantes avec notre bokit!</p>
+        <button><a href="index4.html">Voir nos Bokits</a></button>
+    </div>
+    <div class="div2">
+        <img src="images/bokit_mockup.png" alt="">
+    </div>
+</section>
+  <!-- section2 -->
+  
+  <!-- section3 -->
+  <section class="section__3">
+    <div class="div2">
+        <img src="images/crepe_mockup.png" alt="">
+    </div>
+    <div class="div1">
+        <h1>Nos Crêpes</h1>
+        <p>Découvrez notre sélection de crêpes sucrées <br> et salées dès maintenant !</p>
+        <button><a href="index5.html">Voir nos Crêpes</a></button>
+    </div>
+  </section>
+  <!-- section3 -->
+
+  <!-- section4 -->
+  <section class="section__4">
+    <div class="div1">
+        <h1>Nos Bananes pesées bien garnies</h1>
+        <p>Découvrez l'authenticité des Caraïbes <br> avec notre plat traditionnel de bananes pesées</p>
+        <button><a href="index6.html">Clique ici</a></button>
+    </div>
+    <div class="div2">
+        <img src="images/mockup_banane_pese.png" alt="">
+    </div>
+  </section>
+  <!-- section4 -->
+
+  <!-- section5 -->
+  <section class="section__5">
+    <div class="div1">
+        <img src="images/mockup_pizza.png">
+    </div>
+    <div class="div2">
+        <h1>Nos pizzas</h1>
+        <p>Dégustez notre pizza maison cuite au four <br> et garnie d'ingrédients frais et savoureux</p>
+        <button><a href="index8.html">Clique ici</a></button>
+    </div>
+  </section>
+  <!-- section5 -->
+
+  <!-- section6 -->
+  <section class="section__6">
+    <div class="div2">
+        <h1>Agoulous géants</h1>
+        <p>Oserez-vous relever le défi de notre Agoulou? <br> Découvrez-le dès maintenant !
+        </p>
+        <button><a href="index7.html">Clique ici petit vorace</a></button>
+    </div>
+    <div class="div1">
+        <img src="images/mockup_agoulou.png" alt="">
+    </div>
+  </section>
+  <!-- section6 -->
+
+    <footer>
+        <p>©2023 | entièrement codé par BERTHE Nolan </p>
+    </footer>
+
+
+</body>
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".menu-logo")
+
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</html>

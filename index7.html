@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <a href="index.html" class="logo"><img src="images/dc_logo.png"></a>
+        <div class="menu-logo">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="index2.html">Carte</a></li>
+                <li><a href="index3.html">Contact</a></li>
+                <li><a href="index10.html">Lieu</a></li>
+            </ul>
+        </div>
+        <img src="images/menu_navbar.png" alt ="menu hamburger" class="menu-hamburger">
+          
+    </header>
+    <!-- header -->
+
+    <div id="carte">
+        <h1>Nos Agoulous</h1>
+        <div>
+            <h2>Agoulou Jambon Fromage</h2>
+            <h3>3,50€</h3>
+        </div>
+        <div>
+            <h2>Agoulou Saucisse Fromage</h2>
+            <h3>4,00€</h3>
+        </div>
+        <div>
+            <h2>Agoulou steak fromage</h2>
+            <h3>4,00€</h3>
+        </div>
+        <div>
+            <h2>Agoulou poulet fromage</h2>
+            <h3>4,00€</h3>
+        </div>
+        <div>
+            <h2>Agoulou oeuf jambon fromage</h2>
+            <h3>4,50€</h3>
+        </div>
+        <div>
+            <h2>Agoulou oeuf jambon saucisse fromage</h2>
+            <h3>5,00€</h3>
+        </div>
+        <div>
+            <h2>Agoulou oeuf jambon steak fromage</h2>
+            <h3>6,00€</h3>
+        </div>
+        <div>
+            <h2>Agoulou oeuf jambon merguez fromage</h2>
+            <h3>6,00€</h3>
+        </div>
+        <div>
+            <h2>Agoulou oeuf morue fromage</h2>
+            <h3>6,00€</h3>
+        </div>
+        <div>
+            <h2>Agoulou oeuf thon fromage</h2>
+            <h3>6,00€</h3>
+        </div>
+		<div>
+            <h2>Agoulou oeuf poulet fromage</h2>
+            <h3>6,00€</h3>
+        </div>
+		<div>
+            <h2>Agoulou végétarien</h2>
+			<p> végétarien oignon poivron champignon</p>
+			<p> olive tomate et fromage</p>
+            <h3>6,00€</h3>
+        </div>
+        <h1>Agoulous Super Complets</h1>
+        <div>
+            <h2>Agoulou oeuf jambon saucisse steak fromage</h2>
+            <h3>6,50€</h3>
+        </div>
+        <div>
+            <h2>Agoulou oeuf jambon saucisse poulet fromage</h2>
+            <h3>6,50€</h3>
+        </div>
+        <div>
+            <h2>Agoulou oeuf jambon steak merguez fromage</h2>
+            <h3>6,50€</h3>
+        </div>
+        <div>
+            <h2>Agoulou oeuf thon morue fromage</h2>
+            <h3>6,50€</h3>
+        </div>
+        <div>
+            <h2>Agoulou oeuf jambon kebab fromage</h2>
+            <h3>6,50€</h3>
+        </div>
+    </div>
+    
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".menu-logo")
+
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+</html>
